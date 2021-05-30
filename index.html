@@ -15,97 +15,58 @@
 
 <script>
 
-	let a = 5; // number up to 2^53-1 + NaN, ±Infinity
-	let b, c, d, e, f, g; // undefined
-	c = 'Hello'; // string
-	d = false; // boolean -> true || false
-	e = null; // появляется либо при ссылке на несуществующий DOM-элемент, либо можно присвоить самим
-	f = Symbol('name'); // symbol
-	g = 999555555777772n; // BigInt from 2^54
+//В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц (зима, лето, весна, осень)
 
-	let obj = {
-		name: 'Jane'
-	} // object - структура/тип данных
+let month = +prompt('Type month 1-12');
 
-	let arr = [1,2,3]; // Array - массив, структура данных
-
-
-	// математические операторы + - / *  ++ --
-	// операторы сравнения > < >= <= == === != !==
-	// логические операторы  && || ! (и или не)
-
-
-	a = 6;
-
-	const x = 10;
-	// x = 11; Type Error
-
-	var y = true;
-	// z = 8;
-	y = 7;
-
-
-// alert(y);
-//let z = confirm('Are you sure you want to delete item?'); // true or false depend on button clicked
-//let z = prompt('Type your age', 0);
-
-console.log(typeof(z));
-console.warn('Not alarm');
-console.error('ALARM!!!');
-
-// debugger;
-
-console.log('My ' + 'name '+ 'is');
-console.log(`I am ${x} years old`);
-
-
-let k = '5';
-// let l = +k + 2;
-let l = Number(k) + 2;
-
-
-let n = 6;
-let m = 8;
-
-if(m > n ){
-	console.log('m > n');
-}
-else if(m === n){
-	console.log('m = n');
-}
-else{
-	console.log('m < n');
-}
-
-
-let day = +prompt('Type daynum 1-7');
-
-switch (day) {
-	case 1: console.log('Mo');
+switch (month) {
+	case 1: alert ('Winter');
 			break;
-	case 2: console.log('Tue');
+	case 2: alert('Winter');
 			break;
-	case 3: console.log('Wed');
+	case 3: alert('Spring');
 			break;
-	case 4: console.log('Thu');
+	case 4: alert('Spring');
 			break;
-	case 5: console.log('Fri');
+	case 5: alert('Spring');
 			break;
-	case 6: console.log('Sat');
+	case 6: alert('Summer');
 			break;
-	case 7: console.log('Sun');
+	case 7: alert('Summer');
 			break;
-	default: console.log('Not a day');
+	case 8: alert('Summer');
+		break;
+	case 9: alert('Autumn');
+		break;
+	case 10: alert('Autumn');
+		break;
+	case 11: alert('Autumn');
+		break;
+	case 12: alert('Winter');
+		break;
+	default: alert('Not a month');
 			break;
 }
 
-if(m < n && n >=5){
-	console.log('N > 5 and m > n');
-}
+	//Если переменная test равна true, то выведите на экран слово 'верно', иначе выведите слово 'неверно'
 
-console.warn('Last one for today');
+	let test = true;
 
+	if (test === true) {
+		console.log('true');
+	} else {
+		console.log('false');
+	}
 
+// Найдите количество секунд в сутках
+
+alert (60*60*24);
+
+//Пусть дана переменная r с радиусом круга. По соответствующей формуле найдите площадь круга и запишите ее в переменную s. Выведите содержимое этой переменной на экран
+
+let r = 10;
+let s = 3.14 * r**2;
+alert (s);
 
 </script>
 </body>
